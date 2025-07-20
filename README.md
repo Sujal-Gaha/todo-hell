@@ -12,19 +12,26 @@ A full-stack todo application with multiple backend implementations for learning
 ## Quick Start
 
 ```bash
-# Run Django backend
-./scripts/run-django.sh
+# Run Script
+./run-server.sh
+```
 
-# Run Go backend  
-./scripts/run-go.sh
+```bash
+🚀 Todo App Server Launcher
 
-# Run Next.js frontend
-./scripts/run-nextjs.sh
+Which server would you like to run?
+
+# Choose server
+1. Django Backend (Python) - Port 8000
+2. Go Backend (Gin) - Port 8001
+3. Next.js Frontend - Port 1234
+4. Exit
 ```
 
 ## API Endpoints
 
 All backends implement the same REST API:
+
 - `GET /api/todos` - Get all todos
 - `POST /api/todos` - Create a new todo
 - `PUT /api/todos/:id` - Update a todo
