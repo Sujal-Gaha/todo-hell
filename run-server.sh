@@ -6,7 +6,7 @@ echo "Which server would you like to run?"
 echo ""
 echo "1) Django Backend (Python) - Port 8000"
 echo "2) Go Backend (Gin) - Port 8001" 
-echo "3) Next.js Frontend - Port 3000"
+echo "3) Next.js Frontend - Port 1234"
 echo "4) Exit"
 echo ""
 
@@ -64,12 +64,12 @@ while true; do
             # Install dependencies if node_modules doesn't exist
             if [ ! -d "node_modules" ]; then
                 echo "Installing npm dependencies..."
-                npm install
+                yarn install
             fi
             
             # Start development server
-            echo "Starting Next.js server on http://localhost:3000"
-            npm run dev
+            echo "Starting Next.js server on http://localhost:1234"
+            yarn dev
             break
             ;;
         4)
